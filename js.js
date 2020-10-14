@@ -1,13 +1,14 @@
 let screen = document.querySelector(".wrapper");
 let body = document.querySelector("body")
-//let color = 0
+let colorRotate = 0
+let styleTag = document.querySelector("style")
 
-//setInterval(()=>{
-//   screen.setAttribute("style",`filter: hue-rotate(${color++}deg)`)
-//},70)
+setInterval(()=>{
+   styleTag.innerHTML = `.wrapper{filter: hue-rotate(${colorRotate++}deg)}`
+   //screen.setAttribute("style",`filter: hue-rotate(${colorRotate++}deg)`)
+},30)
 
 // screen.setAttribute("style",`background:blue`)
-
 
 //let getImg = "https://picsum.photos/200/300?random=1"
 
