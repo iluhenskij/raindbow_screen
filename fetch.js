@@ -21,8 +21,9 @@ sendRequest(picsumUrl)
    })
 
 document.body.addEventListener("click",()=>{
-   console.log("next img")
+   let nextImage = `url(https://picsum.photos/${screen.offsetWidth}/${screen.offsetHeight}?random=${counter++})`;
+   console.log(`next image is ${nextImage}`);
    // screen.style.backgroundImage = `url(${imgList[counter++].download_url})`
-   screen.style.backgroundImage = `url(https://picsum.photos/${screen.offsetWidth}/${screen.offsetHeight}?random=${counter++})`
+   screen.style.backgroundImage = nextImage;
 
 })
